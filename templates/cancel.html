@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style = "background-color: #FECD70; font-family: 'poppins';">
+    <div class="absolute top-0 w-full mt-8 text-center bg-violet-900">
+        <h1 class=" text-5xl " style="font-family: 'Nabla'">Cancel Book Reservation</h1>
+    </div>
     <div class="h-screen flex justify-center items-center">
         <form action="" method="post" class="w-full max-w-lg">
             {% csrf_token %}
