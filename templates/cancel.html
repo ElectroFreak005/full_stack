@@ -8,22 +8,25 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
 </head>
 <body>
-    <div class="">
-        <form action="" method="post">
+    <div class="h-screen flex justify-center items-center">
+        <form action="" method="post" class="w-full max-w-lg">
             {% csrf_token %}
-            <div>
+            <div class="flex justify-around px-5 py-3  bg-blue-500 ">
                 <label for="reser_id">Reservation ID</label>
                 <input type="text" name="reser_id" id="reser_id" placeholder="Enter reservation id">
             </div>
-            <div>
+            <div class="flex justify-around px-5 py-3  bg-blue-500 ">
                 <label for="user_email">Guest User Email</label>
                 <input type="email" name="user_email" id="user_email" placeholder="Enter your email">
             </div>
-            <div>
+            <div class="flex justify-around px-5 py-3  bg-blue-500 ">
                 <label for="phono">Phone Number</label>
                 <input type="number" name="phono" id="phono" placeholder="Enter phone no.">
+            </div class="flex justify-around px-5 py-3  bg-blue-500 ">
+            <div class="flex justify-center">
+                <button type="submit" class="px-5 py-3 bg-red-500 rounded-lg text-center shadow-lg hover:bg-blue-600">Cancel</button>
             </div>
-            <button type="submit">Cancel</button>
+            
         </form>
     </div>
 </body>
