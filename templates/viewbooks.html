@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <table class="w-full">
+        <tr class="w-1/2 bg-indigo-300">
+            <th class="p-2">ISBN</th>
+            <th class="p-2 text-center">Book Name</th>
+            <th class="p-2 text-center pr-4">Author</th>
+            <th class="p-2 text-center pr-4">Count</th>
+        </tr>
+        {% for book in books %}
+        <tr class="">
+            <td class="p-2">{{book.isbn}}</td>
+            <td class="p-2 text-center">{{book.title}}</td>
+            <td class="p-2 text-center">{{book.author}}</td>
+            <td class="p-2 text-center">{{book.av_count}}</td>
+        </tr>
+        {% endfor %}
+        
+       
+    </table>
+    
+</body>
+</html>
